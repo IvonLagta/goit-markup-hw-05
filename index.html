@@ -439,8 +439,9 @@
         <div class="sub">
           <p class="sub-form-p">Subscribe</p>
           <form class="sub-form">
-            <label for="#" class="sub-form-label">
+            <label for="send-info" class="sub-form-label">
               <input
+                id="send-info"
                 name="email-input-form"
                 type="email"
                 class="sub-form-email"
@@ -448,7 +449,7 @@
               />
             </label>
             <button class="sub-button" type="submit">
-              Sub
+              Subscribe
               <svg width="24" height="24" class="sub-svg">
                 <use href="./images/icons.svg#paper-plane"></use>
               </svg>
@@ -457,5 +458,31 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window-container">
+      <div class="modal-window">
+        <button type="button" class="modal-button">
+          <svg width="8" height="8" class="cross-svg">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <p class="modal-window-p"></p>
+        <form action="">
+          <div class="place-holder">
+            <label for="user-name" class="customer-name">Name</label>
+            <div class="place-holder-2">
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="customer-name-input"
+              />
+              <svg width="18" height="24" class="modal-svg">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

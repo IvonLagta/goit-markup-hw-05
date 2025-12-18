@@ -475,7 +475,7 @@ ol {
 
 /* Change class after */
 
-.modal-button {
+.close-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -492,16 +492,16 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover,
-.modal-button:focus {
+.close-button:hover,
+.close-button:focus {
   background-color: #404bbf;
   border: none;
 }
-.cross-svg {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover,
-.modal-button:focus {
+.close-button:hover,
+.close-button:focus {
   fill: #fff;
 }
 .modal-window-p {
@@ -511,8 +511,9 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
-.place-holder {
+.customer-info {
   margin-bottom: 8px;
 }
 .customer-name {
@@ -522,6 +523,9 @@ ol {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+}
+.place-holder-2 {
+  position: relative;
 }
 .customer-name-input {
   width: 100%;
@@ -534,10 +538,13 @@ ol {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4d5ae5;
 }
-.modal-svg {
+.form-icon-svg {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer-name-input:focus + .form-icon-svg {
+  fill: #4d5ae5;
 }

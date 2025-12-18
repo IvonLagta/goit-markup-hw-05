@@ -606,10 +606,12 @@ ol {
   background-color: #404bbf;
 }
 
-.Privacy-policy {
+.privacy-policy {
   color: #4d5ae5;
-  text-decoration: underline;
   display: inline;
+}
+.text-tex {
+  text-decoration: underline;
 }
 .send-button {
   display: block;

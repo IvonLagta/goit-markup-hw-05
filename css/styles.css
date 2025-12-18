@@ -443,7 +443,7 @@ ol {
 }
 .sub-button:hover,
 .sub-button:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 .sub-svg {
   margin-left: 16px;
@@ -457,6 +457,14 @@ ol {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .modal-window {
   position: absolute;
@@ -472,9 +480,6 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
-
-/* Change class after */
-
 .close-button {
   position: absolute;
   top: 24px;
@@ -571,11 +576,12 @@ ol {
 .customer-comment:focus {
   border-color: #4d5ae5;
 }
-.user-privacy-lable {
+.user-privacy-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  text-shadow: #8e8f99 0px 4px 9px;
 }
 .check-box-div {
   margin-bottom: 24px;
@@ -594,14 +600,16 @@ ol {
   fill: transparent;
 }
 
-.checkbox-input:checked + .placeholder1 {
+.check-box:checked ~ .user-privacy-label > .check-box-box {
   border: none;
   fill: #f4f4fd;
+  background-color: #404bbf;
 }
 
-.d5ae5 {
+.Privacy-policy {
   color: #4d5ae5;
   text-decoration: underline;
+  display: inline;
 }
 .send-button {
   display: block;
@@ -617,4 +625,6 @@ ol {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  margin: 0 auto;
 }

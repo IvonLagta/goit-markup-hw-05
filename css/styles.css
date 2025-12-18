@@ -580,7 +580,7 @@ ol {
 .check-box-div {
   margin-bottom: 24px;
 }
-.placeholder1 {
+.check-box-box {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -590,6 +590,7 @@ ol {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   fill: transparent;
 }
 
@@ -600,6 +601,7 @@ ol {
 
 .d5ae5 {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 .send-button {
   display: block;

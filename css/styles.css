@@ -24,6 +24,19 @@ h6 {
 img {
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .header > div {
   display: flex;
 }
@@ -581,7 +594,6 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  text-shadow: #8e8f99 0px 4px 9px;
 }
 .check-box-div {
   margin-bottom: 24px;
@@ -598,19 +610,18 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
-
 .check-box:checked ~ .user-privacy-label > .check-box-box {
   border: none;
   fill: #f4f4fd;
   background-color: #404bbf;
 }
-
 .privacy-policy {
   color: #4d5ae5;
   display: inline;
 }
-.text-tex {
+.text-dec {
   text-decoration: underline;
 }
 .send-button {
